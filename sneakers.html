@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sneakers — SOLEVA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body class="subpage">
+  <div class="page-frame">
+    <header class="header" id="header">
+      <a class="logo" href="index.html" aria-label="SOLEVA home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">SOLEVA</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="sneakers.html" class="nav-link is-active">Sneakers</a>
+        <a href="kids.html" class="nav-link">Kids</a>
+        <a href="sale.html" class="nav-link">Sale</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M20 20l-3.2-3.2" />
+          </svg>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 7h15l-1.4 8.2a2 2 0 0 1-2 1.6H9.2a2 2 0 0 1-2-1.6L6 7Z" />
+            <path d="M6 7 5 4H2" />
+            <circle cx="9" cy="20" r="1.2" fill="currentColor" stroke="none" />
+            <circle cx="18" cy="20" r="1.2" fill="currentColor" stroke="none" />
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Curated drop</p>
+        <h1>Featured sneakers</h1>
+        <p class="page-lead">Four signatures from the SOLEVA atelier — sculpted soles, quiet luxury, and all-day wear.</p>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="shop-grid">
+          <article class="product-card" data-category="running men">
+            <div class="product-media">
+              <span class="badge ">New</span>
+              <img src="assets/images/product-aeromax.jpg" alt="AeroMax Runner" />
+              <button class="plus-btn add-to-cart" data-id="aeromax" data-name="AeroMax Runner" data-price="99" data-image="assets/images/product-aeromax.jpg" aria-label="Add AeroMax Runner">+</button>
+            </div>
+            <div class="product-info">
+              <h3>AeroMax Runner</h3>
+              <p class="muted">Performance · Men</p>
+              <div class="product-meta"><span class="price">$99.00</span><span class="stars">★★★★★</span></div>
+            </div>
+          </article>
+          <article class="product-card" data-category="lifestyle women">
+            <div class="product-media">
+              
+              <img src="assets/images/product-modex.jpg" alt="Modex Flex Sneaker" />
+              <button class="plus-btn add-to-cart" data-id="modex" data-name="Modex Flex Sneaker" data-price="77" data-image="assets/images/product-modex.jpg" aria-label="Add Modex Flex Sneaker">+</button>
+            </div>
+            <div class="product-info">
+              <h3>Modex Flex Sneaker</h3>
+              <p class="muted">Lifestyle · Women</p>
+              <div class="product-meta"><span class="price">$77.00</span><span class="stars">★★★★★</span></div>
+            </div>
+          </article>
+          <article class="product-card" data-category="running men women">
+            <div class="product-media">
+              <span class="badge badge-sale">Sale</span>
+              <img src="assets/images/product-cloudstride.jpg" alt="CloudStride Pro" />
+              <button class="plus-btn add-to-cart" data-id="cloudstride" data-name="CloudStride Pro" data-price="129" data-image="assets/images/product-cloudstride.jpg" aria-label="Add CloudStride Pro">+</button>
+            </div>
+            <div class="product-info">
+              <h3>CloudStride Pro</h3>
+              <p class="muted">Running · Unisex</p>
+              <div class="product-meta"><span class="price">$129.00</span><span class="stars">★★★★★</span></div>
+            </div>
+          </article>
+          <article class="product-card" data-category="lifestyle women">
+            <div class="product-media">
+              
+              <img src="assets/images/product-lunar.jpg" alt="Lunar Knit" />
+              <button class="plus-btn add-to-cart" data-id="lunar" data-name="Lunar Knit" data-price="110" data-image="assets/images/product-lunar.jpg" aria-label="Add Lunar Knit">+</button>
+            </div>
+            <div class="product-info">
+              <h3>Lunar Knit</h3>
+              <p class="muted">Lifestyle · Women</p>
+              <div class="product-meta"><span class="price">$110.00</span><span class="stars">★★★★☆</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section categories">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Find your lane</p>
+          <h2>Categories</h2>
+        </div>
+        <div class="category-grid">
+          <a class="category-card" href="shop.html#men">
+            <img src="assets/images/cat-men.jpg" alt="Men sneakers" />
+            <div class="category-label"><span>01</span><h3>Men</h3></div>
+          </a>
+          <a class="category-card" href="shop.html#women">
+            <img src="assets/images/cat-women.jpg" alt="Women sneakers" />
+            <div class="category-label"><span>02</span><h3>Women</h3></div>
+          </a>
+          <a class="category-card" href="shop.html#running">
+            <img src="assets/images/cat-running.jpg" alt="Running sneakers" />
+            <div class="category-label"><span>03</span><h3>Running</h3></div>
+          </a>
+          <a class="category-card" href="shop.html#lifestyle">
+            <img src="assets/images/cat-lifestyle.jpg" alt="Lifestyle sneakers" />
+            <div class="category-label"><span>04</span><h3>Lifestyle</h3></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo-mark"></span>
+          <span class="logo-text">SOLEVA</span>
+        </a>
+        <p>Premium sneakers for everyday architecture of movement.</p>
+      </div>
+      <div>
+        <h4>House</h4>
+        <a href="index.html#about">About</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="sneakers.html">Sneakers</a>
+        <a href="shop.html">All products</a>
+        <a href="sale.html">Sale</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 SOLEVA. All rights reserved.</p>
+      <p>Crafted for the quiet flex.</p>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+
+  <div class="search-panel" id="searchPanel" hidden>
+    <input id="searchInput" type="search" placeholder="Search sneakers..." />
+    <div id="searchResults" class="search-results"></div>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Your bag</h3>
+      <button class="icon-btn" id="closeCart" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+      <button class="btn btn-dark full" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

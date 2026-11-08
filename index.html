@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOLEVA — Step Into Your Style</title>
+  <meta name="description" content="SOLEVA is a premium sneaker house. Discover sculpted comfort, street-ready style, and performance that keeps up with every step." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-frame">
+    <header class="header" id="header">
+      <a class="logo" href="#home" aria-label="SOLEVA home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">SOLEVA</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#home" class="nav-link is-active">Home</a>
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#featured" class="nav-link">Sneakers</a>
+        <a href="#categories" class="nav-link">Kids</a>
+        <a href="#shop" class="nav-link">Sale</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M20 20l-3.2-3.2" />
+          </svg>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 7h15l-1.4 8.2a2 2 0 0 1-2 1.6H9.2a2 2 0 0 1-2-1.6L6 7Z" />
+            <path d="M6 7 5 4H2" />
+            <circle cx="9" cy="20" r="1.2" fill="currentColor" stroke="none" />
+            <circle cx="18" cy="20" r="1.2" fill="currentColor" stroke="none" />
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-dark" aria-hidden="true"></div>
+
+      <article class="float-card float-card--left">
+        <img src="assets/images/product-aeromax.jpg" alt="SOLEVA AeroMax Runner" />
+        <div>
+          <h3>Soleva AeroMax Runner</h3>
+          <p>$99.00</p>
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+        </div>
+        <button class="plus-btn add-to-cart" data-id="aeromax" data-name="AeroMax Runner" data-price="99" data-image="assets/images/product-aeromax.jpg" aria-label="Add AeroMax Runner">+</button>
+      </article>
+
+      <article class="float-card float-card--right">
+        <img src="assets/images/product-modex.jpg" alt="SOLEVA Modex Flex Sneaker" />
+        <div>
+          <h3>Soleva Modex Flex Sneaker</h3>
+          <p>$77.00</p>
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+        </div>
+        <button class="plus-btn add-to-cart" data-id="modex" data-name="Modex Flex Sneaker" data-price="77" data-image="assets/images/product-modex.jpg" aria-label="Add Modex Flex">+</button>
+      </article>
+
+      <div class="hero-copy">
+        <p class="eyebrow">Step into your style</p>
+        <h1 class="hero-word" aria-label="Sneakers">
+          <span>Sneakers</span>
+        </h1>
+        <p class="hero-lead">
+          Explore a range of sneakers designed for everyday comfort, street ready style, and performance that keeps up with every step.
+        </p>
+        <a class="btn btn-dark" href="#shop">Shop Now <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="hero-visual">
+        <img src="assets/images/hero-soleva.jpg" alt="Model wearing sculptural white SOLEVA sneakers" />
+      </div>
+
+      <div class="brand-bar" aria-label="Featured houses">
+        <span class="brand-shein">SHEIN</span>
+        <span class="brand-gucci">GUCCI</span>
+        <span class="brand-nike" aria-label="Nike">
+          <svg viewBox="0 0 69 24" fill="currentColor" aria-hidden="true"><path d="M68.9 3.4c-2.7 2.2-12.4 8.4-27 8.4-8.3 0-15.8-2.2-19.1-3.3 2.6 3.5 10.3 11.7 24.5 11.7 16.4 0 23.5-9.4 21.6-16.8z"/></svg>
+        </span>
+        <span class="brand-adidas">adidas</span>
+        <span class="brand-chanel">Chanel</span>
+        <span class="brand-dior">Dior</span>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <section class="section featured" id="featured">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Curated drop</p>
+          <h2>Featured sneakers</h2>
+          <p>Four signatures from the SOLEVA atelier — sculpted soles, quiet luxury, and all-day wear.</p>
+        </div>
+        <div class="featured-grid">
+          <article class="product-card featured-card">
+            <div class="product-media">
+              <span class="badge">New</span>
+              <img src="assets/images/product-aeromax.jpg" alt="AeroMax Runner" />
+              <button class="plus-btn add-to-cart" data-id="aeromax" data-name="AeroMax Runner" data-price="99" data-image="assets/images/product-aeromax.jpg">+</button>
+            </div>
+            <div class="product-info">
+              <h3>AeroMax Runner</h3>
+              <p class="muted">Performance · Men</p>
+              <div class="product-meta">
+                <span class="price">$99.00</span>
+                <span class="stars">★★★★★</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card featured-card">
+            <div class="product-media">
+              <img src="assets/images/product-modex.jpg" alt="Modex Flex Sneaker" />
+              <button class="plus-btn add-to-cart" data-id="modex" data-name="Modex Flex Sneaker" data-price="77" data-image="assets/images/product-modex.jpg">+</button>
+            </div>
+            <div class="product-info">
+              <h3>Modex Flex</h3>
+              <p class="muted">Lifestyle · Women</p>
+              <div class="product-meta">
+                <span class="price">$77.00</span>
+                <span class="stars">★★★★★</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card featured-card">
+            <div class="product-media">
+              <span class="badge badge-sale">Sale</span>
+              <img src="assets/images/product-cloudstride.jpg" alt="CloudStride Pro" />
+              <button class="plus-btn add-to-cart" data-id="cloudstride" data-name="CloudStride Pro" data-price="129" data-image="assets/images/product-cloudstride.jpg">+</button>
+            </div>
+            <div class="product-info">
+              <h3>CloudStride Pro</h3>
+              <p class="muted">Running · Unisex</p>
+              <div class="product-meta">
+                <span class="price">$129.00</span>
+                <span class="stars">★★★★★</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card featured-card">
+            <div class="product-media">
+              <img src="assets/images/product-lunar.jpg" alt="Lunar Knit" />
+              <button class="plus-btn add-to-cart" data-id="lunar" data-name="Lunar Knit" data-price="110" data-image="assets/images/product-lunar.jpg">+</button>
+            </div>
+            <div class="product-info">
+              <h3>Lunar Knit</h3>
+              <p class="muted">Lifestyle · Women</p>
+              <div class="product-meta">
+                <span class="price">$110.00</span>
+                <span class="stars">★★★★☆</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shop" id="shop">
+      <div class="container">
+        <div class="section-head split">
+          <div>
+            <p class="eyebrow">The collection</p>
+            <h2>Shop sneakers</h2>
+          </div>
+          <div class="filters" role="tablist" aria-label="Product filters">
+            <button class="filter-btn is-active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="men">Men</button>
+            <button class="filter-btn" data-filter="women">Women</button>
+            <button class="filter-btn" data-filter="running">Running</button>
+            <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+          </div>
+        </div>
+
+        <div class="shop-grid" id="shopGrid">
+          <article class="product-card" data-category="running men">
+            <div class="product-media">
+              <img src="assets/images/product-velocity.jpg" alt="Velocity X" />
+              <button class="plus-btn add-to-cart" data-id="velocity" data-name="Velocity X" data-price="145" data-image="assets/images/product-velocity.jpg">+</button>
+            </div>
+            <div class="product-info">
+              <h3>Velocity X</h3>
+              <p class="muted">Running · Men</p>
+              <div class="product-meta"><span class="price">$145.00</span><span class="stars">★★★★★</span></div>
+            </div>
+          </article>
+          <article class="product-card" data-category="lifestyle women">
+            <div class="product-media">
+              <img src="assets/images/product-ivory.jpg" alt="Ivory Court" />
+              <button class="plus-btn add-to-cart" data-id="ivory" data-name="Ivory Court" data-price="98" data-image="assets/images/product-ivory.jpg">+</button>
+            </div>
+            <div class="product-info">
+              <h3>Ivory Court</h3>
+              <p class="muted">Lifestyle · Women</p>
+              <div class="product-meta"><span class="price">$98.00</span><span class="stars">★★★★★</span></div>
+            </div>
+          </article>
+          <article class="product-card" data-category="running men">
+            <div class="product-media">
+              <span class="badge">Trail</span>
+              <img src="assets/images/product-trail.jpg" alt="Trail Pulse" />
+              <button class="plus-btn add-to-cart" data-id="trail" data-name="Trail Pulse" data-price="132" data-image="assets/images/product-trail.jpg">+</button>
+            </div>
+            <div class="product-info">
+              <h3>Trail Pulse</h3>
+              <p class="muted">Running · Men</p>
+              <div class="product-meta"><span class="price">$132.00</span><span class="stars">★★★★☆</span></div>
+            </div>
+          </article>
+          <article class="product-card" data-category="lifestyle men">
+            <div class="product-media">
+              <img src="assets/images/product-night.jpg" alt="Night Runner" />
+              <button class="plus-btn add-to-cart" data-id="night" data-name="Night Runner" data-price="118" data-image="assets/images/product-night.jpg">+</button>
+            </div>
+            <div class="product-info">
+              <h3>Night Runner</h3>
+              <p class="muted">Lifestyle · Men</p>
+              <div class="product-meta"><span class="price">$118.00</span><span class="stars">★★★★★</span></div>
+            </div>
+          </article>
+          <article class="product-card" data-category="lifestyle women">
+            <div class="product-media">
+              <img src="assets/images/product-dune.jpg" alt="Sand Dune" />
+              <button class="plus-btn add-to-cart" data-id="dune" data-name="Sand Dune" data-price="89" data-image="assets/images/product-dune.jpg">+</button>
+            </div>
+            <div class="product-info">
+              <h3>Sand Dune</h3>
+              <p class="muted">Lifestyle · Women</p>
+              <div class="product-meta"><span class="price">$89.00</span><span class="stars">★★★★★</span></div>
+            </div>
+          </article>
+          <article class="product-card" data-category="lifestyle men">
+            <div class="product-media">
+              <img src="assets/images/product-carbon.jpg" alt="Carbon Peak" />
+              <button class="plus-btn add-to-cart" data-id="carbon" data-name="Carbon Peak" data-price="156" data-image="assets/images/product-carbon.jpg">+</button>
+            </div>
+            <div class="product-info">
+              <h3>Carbon Peak</h3>
+              <p class="muted">Lifestyle · Men</p>
+              <div class="product-meta"><span class="price">$156.00</span><span class="stars">★★★★★</span></div>
+            </div>
+          </article>
+          <article class="product-card" data-category="running women">
+            <div class="product-media">
+              <span class="badge badge-sale">-20%</span>
+              <img src="assets/images/product-softform.jpg" alt="Soft Form" />
+              <button class="plus-btn add-to-cart" data-id="softform" data-name="Soft Form" data-price="92" data-image="assets/images/product-softform.jpg">+</button>
+            </div>
+            <div class="product-info">
+              <h3>Soft Form</h3>
+              <p class="muted">Running · Women</p>
+              <div class="product-meta"><span class="price">$92.00</span><span class="stars">★★★★☆</span></div>
+            </div>
+          </article>
+          <article class="product-card" data-category="lifestyle men">
+            <div class="product-media">
+              <img src="assets/images/product-flex.jpg" alt="Flex Court" />
+              <button class="plus-btn add-to-cart" data-id="flex" data-name="Flex Court" data-price="104" data-image="assets/images/product-flex.jpg">+</button>
+            </div>
+            <div class="product-info">
+              <h3>Flex Court</h3>
+              <p class="muted">Lifestyle · Men</p>
+              <div class="product-meta"><span class="price">$104.00</span><span class="stars">★★★★★</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section categories" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Find your lane</p>
+          <h2>Categories</h2>
+        </div>
+        <div class="category-grid">
+          <a class="category-card" href="#shop" data-jump="men">
+            <img src="assets/images/cat-men.jpg" alt="Men's sneakers" />
+            <div class="category-label">
+              <span>01</span>
+              <h3>Men</h3>
+            </div>
+          </a>
+          <a class="category-card" href="#shop" data-jump="women">
+            <img src="assets/images/cat-women.jpg" alt="Women's sneakers" />
+            <div class="category-label">
+              <span>02</span>
+              <h3>Women</h3>
+            </div>
+          </a>
+          <a class="category-card" href="#shop" data-jump="running">
+            <img src="assets/images/cat-running.jpg" alt="Running sneakers" />
+            <div class="category-label">
+              <span>03</span>
+              <h3>Running</h3>
+            </div>
+          </a>
+          <a class="category-card" href="#shop" data-jump="lifestyle">
+            <img src="assets/images/cat-lifestyle.jpg" alt="Lifestyle sneakers" />
+            <div class="category-label">
+              <span>04</span>
+              <h3>Lifestyle</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img src="assets/images/about.jpg" alt="SOLEVA studio sneakers on marble" />
+          <div class="about-stat">
+            <strong>12k+</strong>
+            <span>pairs crafted this season</span>
+          </div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">The house</p>
+          <h2>SOLEVA is a study in quiet motion.</h2>
+          <p>
+            Founded for walkers who treat the street as a runway, SOLEVA designs sneakers with architectural soles, considered palettes, and materials that feel as considered as they look.
+          </p>
+          <p>
+            Every pair is built around three ideas: sculpted comfort, street-ready proportion, and performance that does not shout. We source premium knits, tumbled leathers, and cloud-foam midsoles — then edit until nothing extra remains.
+          </p>
+          <ul class="about-points">
+            <li>Hand-finished details</li>
+            <li>Responsible materials</li>
+            <li>Designed in studio, worn everywhere</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">From the city</p>
+          <h2>Reviews</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>“The CloudStride feels like walking on marble after rain — silent, precise, and somehow luxurious.”</p>
+            <div class="reviewer">
+              <img src="assets/images/review-1.jpg" alt="Marcus Hale" />
+              <div>
+                <strong>Marcus Hale</strong>
+                <span>New York · AeroMax Runner</span>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>“Finally a white sneaker that looks editorial and still survives a full day of galleries and late dinners.”</p>
+            <div class="reviewer">
+              <img src="assets/images/review-2.jpg" alt="Elena Voss" />
+              <div>
+                <strong>Elena Voss</strong>
+                <span>Paris · Modex Flex</span>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>“SOLEVA understands proportion. The sole is sculptural without being a costume. I get stopped on the street.”</p>
+            <div class="reviewer">
+              <img src="assets/images/review-3.jpg" alt="Julian Park" />
+              <div>
+                <strong>Julian Park</strong>
+                <span>Seoul · Carbon Peak</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Atelier</p>
+          <h2>Contact</h2>
+          <p class="contact-lead">Visit the house, write the studio, or join the list for private drops.</p>
+          <ul class="contact-list">
+            <li>
+              <span>Studio</span>
+              <strong>18 Mercer Street, SoHo<br />New York, NY 10013</strong>
+            </li>
+            <li>
+              <span>Hours</span>
+              <strong>Tue–Sat · 11:00–19:00</strong>
+            </li>
+            <li>
+              <span>Email</span>
+              <strong><a href="mailto:atelier@soleva.com">atelier@soleva.com</a></strong>
+            </li>
+            <li>
+              <span>Phone</span>
+              <strong><a href="tel:+12125550190">+1 (212) 555-0190</a></strong>
+            </li>
+          </ul>
+        </div>
+        <form class="newsletter" id="newsletterForm">
+          <h3>The private list</h3>
+          <p>Be first to the next drop. No noise — only new silhouettes.</p>
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="Email address" required />
+          <button class="btn btn-dark full" type="submit">Join newsletter</button>
+          <p class="form-note" id="formNote" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="#home">
+          <span class="logo-mark"></span>
+          <span class="logo-text">SOLEVA</span>
+        </a>
+        <p>Premium sneakers for everyday architecture of movement.</p>
+      </div>
+      <div>
+        <h4>House</h4>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="#featured">Featured</a>
+        <a href="#shop">All sneakers</a>
+        <a href="#categories">Categories</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 SOLEVA. All rights reserved.</p>
+      <p>Crafted for the quiet flex.</p>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+
+  <div class="search-panel" id="searchPanel" hidden>
+    <input id="searchInput" type="search" placeholder="Search sneakers..." />
+    <div id="searchResults" class="search-results"></div>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Your bag</h3>
+      <button class="icon-btn" id="closeCart" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+      <button class="btn btn-dark full" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
